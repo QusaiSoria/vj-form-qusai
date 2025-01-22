@@ -28,8 +28,7 @@ async def start(client, message):
         pass
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-            InlineKeyboardButton('✪ Facebook', url="https://www.facebook.com/profile.php?id=61557540113498&mibextid=ZbWKwL"),
-            InlineKeyboardButton('⌬ Instagram', url='https://www.instagram.com/cimaparadiso1988?igsh=MXdzc3owaGR2bHJ6MA==')
+            InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
         ],[
             InlineKeyboardButton('مطور البوت', url="https://t.me/DeadOne101")
         ]
@@ -64,8 +63,7 @@ async def start(client, message):
             buttons = [[
                 #InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('✪ Facebook', url="https://www.facebook.com/profile.php?id=61557540113498&mibextid=ZbWKwL"),
-                InlineKeyboardButton('⌬ Instagram', url='https://www.instagram.com/cimaparadiso1988?igsh=MXdzc3owaGR2bHJ6MA==')
+                InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
             ],[
                 InlineKeyboardButton('مطور البوت', url="https://t.me/DeadOne101")
                 #InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
@@ -294,8 +292,7 @@ async def start(client, message):
                     )
                 if STREAM_MODE == True:
                     button = [[
-                        InlineKeyboardButton('Facebook', url="https://www.facebook.com/profile.php?id=61557540113498&mibextid=ZbWKwL"),
-                        InlineKeyboardButton('Instagram', url="https://www.instagram.com/cimaparadiso1988?igsh=MXdzc3owaGR2bHJ6MA==")
+                        InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
                     ],[
                         InlineKeyboardButton("🚀 Fast Download 🚀", url=download),
                         InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
@@ -304,8 +301,7 @@ async def start(client, message):
                     ]]
                 else:
                     button = [
-                        InlineKeyboardButton('Facebook', url="https://www.facebook.com/profile.php?id=61557540113498&mibextid=ZbWKwL"),
-                        InlineKeyboardButton('Instagram', url="https://www.instagram.com/cimaparadiso1988?igsh=MXdzc3owaGR2bHJ6MA==")
+                        InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
                     ]
                 msg = await client.send_cached_media(
                     chat_id=message.from_user.id,
@@ -403,8 +399,7 @@ async def start(client, message):
                     )
                 if STREAM_MODE == True:
                     button = [[
-                        InlineKeyboardButton('Facebook', url="https://www.instagram.com/cimaparadiso1988?igsh=MXdzc3owaGR2bHJ6MA=="),
-                        InlineKeyboardButton('Inatgram', url="https://www.facebook.com/profile.php?id=61557540113498&mibextid=ZbWKwL")
+                        InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
                     ],[
                         InlineKeyboardButton('مطور البوت', url="https://t.me/DeadOne101")
                     ],[
@@ -415,8 +410,7 @@ async def start(client, message):
                     ]]
                 else:
                     button = [[
-                        InlineKeyboardButton('Facebook', url="https://www.facebook.com/profile.php?id=61557540113498&mibextid=ZbWKwL"),
-                        InlineKeyboardButton('Instagram', url="https://www.instagram.com/cimaparadiso1988?igsh=MXdzc3owaGR2bHJ6MA==")
+                        InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
                     ],[
                         InlineKeyboardButton('مطور البوت', url="https://t.me/DeadOne101")
                     ]]
@@ -547,8 +541,7 @@ async def start(client, message):
                     )
                     return
             button = [[
-                InlineKeyboardButton('Facebook', url="https://www.instagram.com/cimaparadiso1988?igsh=MXdzc3owaGR2bHJ6MA=="),
-                InlineKeyboardButton('Inatgram', url="https://www.facebook.com/profile.php?id=61557540113498&mibextid=ZbWKwL")
+                InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
             ],[
                 InlineKeyboardButton("مطور البوت", url="t.me/DeadOne101")
             ]]
@@ -609,8 +602,7 @@ async def start(client, message):
                     )
                     return
             button = [[
-                 InlineKeyboardButton('Facebook', url="https://www.instagram.com/cimaparadiso1988?igsh=MXdzc3owaGR2bHJ6MA=="),
-                InlineKeyboardButton('Inatgram', url="https://www.facebook.com/profile.php?id=61557540113498&mibextid=ZbWKwL")
+                InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
             ],[
                 InlineKeyboardButton("مطور البوت", url="t.me/DeadOne101")
             ]]
@@ -673,8 +665,7 @@ async def start(client, message):
             )
             return
     button = [[
-        InlineKeyboardButton('Facebook', url="https://www.instagram.com/cimaparadiso1988?igsh=MXdzc3owaGR2bHJ6MA=="),
-        InlineKeyboardButton('Inatgram', url="https://www.facebook.com/profile.php?id=61557540113498&mibextid=ZbWKwL")
+        InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
     ],[
         InlineKeyboardButton("مطور البوت", url="t.me/DeadOne101")
     ]]
