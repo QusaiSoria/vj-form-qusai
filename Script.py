@@ -241,9 +241,9 @@ Nᴀᴍᴇ - {}"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
+    CAPTION = """<b>📂 {file_name}
 
-<b> Size ⚙️: {file_size}</b>""" 
+<b> الحجم ⚙️: {file_size}</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>يتم البحث عن : {qurey}
