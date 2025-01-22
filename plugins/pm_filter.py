@@ -1046,7 +1046,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
 
         else:
             btn.insert(0, 
-                # [
+                 [
                 #     InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
                 #     InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
                 #     InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
