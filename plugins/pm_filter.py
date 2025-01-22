@@ -332,7 +332,7 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
                 show_alert=True,
             )
     except:
-        pass
+            pass
     if lang != "homepage":
         search = f"{search} {lang}" 
     BUTTONS[key] = search
@@ -353,14 +353,12 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
             ]
             for file in files
         ]
-         btn.insert(0, [
-            InlineKeyboardButton("إرسال الكل 📁", callback_data=f"sendfiles#{key}"),
+        btn.insert(0, [
+        InlineKeyboardButton("إرسال الكل 📁", callback_data=f"sendfiles#{key}"),
         ])
-        btn.insert(0, 
-            [
-              InlineKeyboardButton(f'الطلب رح ينحذف بعد 5 دقايق 😅')
-            ]
-        )
+        btn.insert(0, [
+            InlineKeyboardButton(f'الطلب رح ينحذف بعد 5 دقايق 😅')
+        ])
     else:
         btn = []
          btn.insert(0, [
