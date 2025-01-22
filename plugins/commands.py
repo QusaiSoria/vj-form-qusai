@@ -30,7 +30,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
         ],[
-            InlineKeyboardButton('مطور البوت', url="https://t.me/DeadOne101")
+            InlineKeyboardButton('👨‍💻 مطور البوت 👨‍💻', url="https://t.me/DeadOne101")
         ]
                  ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -65,7 +65,7 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
             ],[
-                InlineKeyboardButton('مطور البوت', url="https://t.me/DeadOne101")
+                InlineKeyboardButton('👨‍💻 مطور البوت 👨‍💻', url="https://t.me/DeadOne101")
                 #InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
                 #InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
             ],[
@@ -401,7 +401,7 @@ async def start(client, message):
                     button = [[
                         InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
                     ],[
-                        InlineKeyboardButton('مطور البوت', url="https://t.me/DeadOne101")
+                        InlineKeyboardButton('👨‍💻 مطور البوت 👨‍💻', url="https://t.me/DeadOne101")
                     ],[
                         InlineKeyboardButton("🚀 Fast Download 🚀", url=download),
                         InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
@@ -412,7 +412,7 @@ async def start(client, message):
                     button = [[
                         InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
                     ],[
-                        InlineKeyboardButton('مطور البوت', url="https://t.me/DeadOne101")
+                        InlineKeyboardButton('👨‍💻 مطور البوت 👨‍💻', url="https://t.me/DeadOne101")
                     ]]
                 try:
                     p = await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False, reply_markup=InlineKeyboardMarkup(button))
@@ -543,7 +543,7 @@ async def start(client, message):
             button = [[
                 InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
             ],[
-                InlineKeyboardButton("مطور البوت", url="t.me/DeadOne101")
+                InlineKeyboardButton("👨‍💻 مطور البوت 👨‍💻", url="t.me/DeadOne101")
             ]]
             if STREAM_MODE == True:
                 button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')])
@@ -604,7 +604,7 @@ async def start(client, message):
             button = [[
                 InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
             ],[
-                InlineKeyboardButton("مطور البوت", url="t.me/DeadOne101")
+                InlineKeyboardButton("👨‍💻 مطور البوت 👨‍💻", url="t.me/DeadOne101")
             ]]
             if STREAM_MODE == True:
                 button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')])
@@ -667,7 +667,7 @@ async def start(client, message):
     button = [[
         InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
     ],[
-        InlineKeyboardButton("مطور البوت", url="t.me/DeadOne101")
+        InlineKeyboardButton("👨‍💻 مطور البوت 👨‍💻", url="t.me/DeadOne101")
     ]]
     if STREAM_MODE == True:
         button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')])
