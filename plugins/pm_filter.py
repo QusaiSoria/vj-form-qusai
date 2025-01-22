@@ -361,7 +361,7 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
         ])
     else:
         btn = []
-         btn.insert(0, [
+        btn.insert(0, [
             InlineKeyboardButton("إرسال الكل 📁", callback_data=f"sendfiles#{key}"),
         ])
         btn.insert(0, 
@@ -520,7 +520,7 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
         ])
     else:
         btn = []
-         btn.insert(0, [
+        btn.insert(0, [
             InlineKeyboardButton("إرسال الكل 📁", callback_data=f"sendfiles#{key}"),
         ])
         btn.insert(0, 
@@ -670,7 +670,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
             for file in files
         ]
-         btn.insert(0, [
+        btn.insert(0, [
             InlineKeyboardButton("إرسال الكل 📁", callback_data=f"sendfiles#{key}"),
         ])
         btn.insert(0, 
@@ -680,7 +680,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         )
     else:
         btn = []
-         btn.insert(0, [
+        btn.insert(0, [
             InlineKeyboardButton("إرسال الكل 📁", callback_data=f"sendfiles#{key}"),
         ])
         btn.insert(0, 
@@ -870,7 +870,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         ])
     else:
         btn = []
-         btn.insert(0, [
+        btn.insert(0, [
             InlineKeyboardButton("إرسال الكل 📁", callback_data=f"sendfiles#{key}"),
         ])
         btn.insert(0, 
@@ -1009,33 +1009,33 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         if settings['auto_delete']:
              btn.insert(0, [
             InlineKeyboardButton("إرسال الكل 📁", callback_data=f"sendfiles#{key}"),
-        ])
-        btn.insert(0, 
-            [
-              InlineKeyboardButton(f'الطلب رح ينحذف بعد 5 دقايق 😅')
-            ]
-        )
+            ])
+            btn.insert(0, 
+                [
+                  InlineKeyboardButton(f'الطلب رح ينحذف بعد 5 دقايق 😅')
+                ]
+            )
 
         else:
              btn.insert(0, [
             InlineKeyboardButton("إرسال الكل 📁", callback_data=f"sendfiles#{key}"),
-        ])
-        btn.insert(0, 
-            [
-              InlineKeyboardButton(f'الطلب رح ينحذف بعد 5 دقايق 😅')
-            ]
-        )
+            ])
+            btn.insert(0, 
+                [
+                  InlineKeyboardButton(f'الطلب رح ينحذف بعد 5 دقايق 😅')
+                ]
+            )
                 
     except KeyError:
         await save_group_settings(query.message.chat.id, 'auto_delete', True)
          btn.insert(0, [
             InlineKeyboardButton("إرسال الكل 📁", callback_data=f"sendfiles#{key}"),
-        ])
-        btn.insert(0, 
+            ])
+         btn.insert(0, 
             [
               InlineKeyboardButton(f'الطلب رح ينحذف بعد 5 دقايق 😅')
             ]
-        )
+            )
 
     if offset != "":
         try:
@@ -2617,7 +2617,7 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
         )
     else:
         btn = []
-         btn.insert(0, [
+        btn.insert(0, [
             InlineKeyboardButton("إرسال الكل 📁", callback_data=f"sendfiles#{key}"),
         ])
         btn.insert(0, 
