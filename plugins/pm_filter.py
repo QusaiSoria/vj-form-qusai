@@ -1007,7 +1007,8 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
 
     try:
         if settings['auto_delete']:
-             btn.insert(0, [
+            
+            btn.insert(0, [
             InlineKeyboardButton("إرسال الكل 📁", callback_data=f"sendfiles#{key}"),
             ])
             btn.insert(0, 
@@ -1017,7 +1018,8 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
             )
 
         else:
-             btn.insert(0, [
+            
+            btn.insert(0, [
             InlineKeyboardButton("إرسال الكل 📁", callback_data=f"sendfiles#{key}"),
             ])
             btn.insert(0, 
@@ -1028,10 +1030,10 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
                 
     except KeyError:
         await save_group_settings(query.message.chat.id, 'auto_delete', True)
-         btn.insert(0, [
+        btn.insert(0, [
             InlineKeyboardButton("إرسال الكل 📁", callback_data=f"sendfiles#{key}"),
             ])
-         btn.insert(0, 
+        btn.insert(0, 
             [
               InlineKeyboardButton(f'الطلب رح ينحذف بعد 5 دقايق 😅')
             ]
@@ -1054,6 +1056,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
                 [InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ ⇛",callback_data=f"next_{req}_{key}_{offset}")]
             )
     else:
+        
         btn.append(
             [InlineKeyboardButton(text="😶 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ 😶",callback_data="pages")]
         )
@@ -2607,7 +2610,7 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
             ]
             for file in files
         ]
-         btn.insert(0, [
+        btn.insert(0, [
             InlineKeyboardButton("إرسال الكل 📁", callback_data=f"sendfiles#{key}"),
         ])
         btn.insert(0, 
@@ -2688,7 +2691,7 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
                 cap += f"<b>\n📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file['file_id']}'>[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}\n</a></b>"
     else:
         if settings["button"]:
-        cap = f"<b> <i>إليك ما عثرت عليه </i> </b>"
+            cap = f"<b> <i>إليك ما عثرت عليه </i> </b>"
 
         else:
             cap = f"<b> <i>إليك ما عثرت عليه </i> </b>"
