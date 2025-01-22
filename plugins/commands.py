@@ -97,30 +97,30 @@ async def start(client, message):
             return
         try:
             btn = [[
-                InlineKeyboardButton("❆ Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ❆", url=invite_link.invite_link)
+                InlineKeyboardButton("❆ إنضم لقناتنا ❆", url=invite_link.invite_link)
             ]]
             if message.command[1] != "subscribe":
                 if REQUEST_TO_JOIN_MODE == True:
                     if TRY_AGAIN_BTN == True:
                         try:
                             kk, file_id = message.command[1].split("_", 1)
-                            btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", callback_data=f"checksub#{kk}#{file_id}")])
+                            btn.append([InlineKeyboardButton("↻ حاول مجددا", callback_data=f"checksub#{kk}#{file_id}")])
                         except (IndexError, ValueError):
-                            btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                            btn.append([InlineKeyboardButton("↻ حاول مجددا", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
                 else:
                     try:
                         kk, file_id = message.command[1].split("_", 1)
-                        btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", callback_data=f"checksub#{kk}#{file_id}")])
+                        btn.append([InlineKeyboardButton("↻ حاول مجددا", callback_data=f"checksub#{kk}#{file_id}")])
                     except (IndexError, ValueError):
-                        btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                        btn.append([InlineKeyboardButton("↻ حاول مجددا", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
             if REQUEST_TO_JOIN_MODE == True:
                 if TRY_AGAIN_BTN == True:
-                    text = "**🕵️ Jᴏɪɴ Tʜᴇ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Tᴏ Gᴇᴛ Mᴏᴠɪᴇ Fɪʟᴇ\n\n👨‍💻 Fɪʀsᴛ Cʟɪᴄᴋ Oɴ Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Bᴜᴛᴛᴏɴ, Tʜᴇɴ Cʟɪᴄᴋ Oɴ Rᴇǫᴜᴇsᴛ Tᴏ Jᴏɪɴ Bᴜᴛᴛᴏɴ Aғᴛᴇʀ Cʟɪᴄᴋ Oɴ Tʀʏ Aɢᴀɪɴ Bᴜᴛᴛᴏɴ.**"
+                    text = "**🕵️ عليك الإنضمام إلى قناتنا أولا\n\n👨‍💻 أولا اضغط على زر إنضم لقناتنا, ثم إنضم للقناة ,بعدها اضغط حاول مجددا 😀.**"
                 else:
                     await db.set_msg_command(message.from_user.id, com=message.command[1])
-                    text = "**🕵️ Jᴏɪɴ Tʜᴇ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Tᴏ Gᴇᴛ Mᴏᴠɪᴇ Fɪʟᴇ\n\n👨‍💻 Fɪʀsᴛ Cʟɪᴄᴋ Oɴ Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Bᴜᴛᴛᴏɴ, Tʜᴇɴ Cʟɪᴄᴋ Oɴ Rᴇǫᴜᴇsᴛ Tᴏ Jᴏɪɴ Bᴜᴛᴛᴏɴ.**"
+                    text = "**🕵️ عليك الإنضمام إلى قناتنا أولا\n\n👨‍💻 أولا اضغط على زر إنضم لقناتنا, ثم إنضم للقناة ,بعدها اضغط حاول مجددا 😀.**"
             else:
-                text = "**🕵️ Jᴏɪɴ Tʜᴇ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Tᴏ Gᴇᴛ Mᴏᴠɪᴇ Fɪʟᴇ\n\n👨‍💻 Fɪʀsᴛ  Cʟɪᴄᴋ Oɴ Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ Bᴜᴛᴛᴏɴ, Tʜᴇɴ Jᴏɪɴ Cʜᴀɴɴᴇʟ Aғᴛᴇʀ Cʟɪᴄᴋ Oɴ Tʀʏ Aɢᴀɪɴ Bᴜᴛᴛᴏɴ**"
+                text = "**🕵️ عليك الإنضمام إلى قناتنا أولا\n\n👨‍💻 أولا اضغط على زر إنضم لقناتنا, ثم إنضم للقناة ,بعدها اضغط حاول مجددا 😀.**"
             await client.send_message(
                 chat_id=message.from_user.id,
                 text=text,
