@@ -2704,8 +2704,12 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
         if settings["button"]:
             cap = ""
         else:
-            cap = ""
-            cap+="<b><u>🍿 ملفاتك 👇</u></b>\n\n"
+            cap = "<b><u>🍿 ملفاتك 👇</u></b>\n\n" 
+
+        if not cap.strip():  # Check if cap is empty
+            # Skip updating the message
+            pass
+            
             for file in files:
                 cap += f"<b>📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file['file_id']}'>[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}\n\n</a></b>"
     static_photo = "https://i.ibb.co/4mfNxM7/IMG-20250122-084536-557.jpg"  # Replace with your static photo
