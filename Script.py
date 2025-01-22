@@ -4,9 +4,9 @@
 
 
 class script(object):
-    START_TXT = """<b><blockquote>Hᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
+    START_TXT = """<b><blockquote>مرحبا {}, أنا <a href=https://t.me/{}>{}</a></blockquote>
     
-مرحبا بك ببوت الطلبات الخاص بمنصة 【 Cima Paradiso 】</b>"""
+مرحبا بك ببوت الطلبات الخاص بالمسلسلات السورية </b>"""
 
     CLONE_START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
     
