@@ -125,7 +125,7 @@ async def next_page(bot, query):
 
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data=""),
+                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data="1"),
                 
             ]
         )
@@ -137,7 +137,7 @@ async def next_page(bot, query):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data=""),
+                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data="1"),
                 
             ]
         )
@@ -358,7 +358,7 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=""),
+                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data="1"),
                 
             ]
         )
@@ -370,7 +370,7 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data=""),
+                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data="1"),
                
             ]
         )
@@ -520,7 +520,7 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data=""),
+                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data="1"),
                 
             ]
         )
@@ -532,7 +532,7 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data=""),
+                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data="1"),
                 
             ]
         )
@@ -684,7 +684,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data=""),
+                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data="1"),
                 
             ]
         )
@@ -696,7 +696,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data=""),
+                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data="1"),
                 
             ]
         )
@@ -877,7 +877,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data=""),
+                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data="1"),
                
             ]
         )
@@ -889,7 +889,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=""),
+                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data="1"),
                 
             ]
         )
@@ -1028,7 +1028,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=""),
+                    InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data="1"),
                     
                 ]
             )
@@ -1040,7 +1040,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=""),
+                    InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data="1"),
                     
                 ]
             )
@@ -1053,7 +1053,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         await save_group_settings(query.message.chat.id, 'auto_delete', True)
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=""),
+                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data="1"),
               
             ]
         )
@@ -2634,7 +2634,7 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=""),
+                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data="1"),
                
             ]
         )
@@ -2646,7 +2646,7 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=""),
+                InlineKeyboardButton(f'رح احذف بعد خمس دقايق 😁', callback_data="1"),
                 
             ]
         )
@@ -2712,7 +2712,7 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
         )
         temp.IMDB_CAP[message.from_user.id] = cap
         if not settings["button"]:
-            cap+="<b>\n\n<u>🍿 ملفاتط 👇</u></b>\n"
+            cap+="<b>\n\n<u>🍿 ملفاتك 👇</u></b>\n"
             for file in files:
                 cap += f"<b>\n📁 <a href='https://telegram.me/{temp.U_NAME}?start=files_{file['file_id']}'>[{get_size(file['file_size'])}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file['file_name'].split()))}\n</a></b>"
     else:
