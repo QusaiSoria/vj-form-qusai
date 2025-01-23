@@ -64,7 +64,7 @@ async def who_is(client, message):
         "`Fetching user info...`"
     )
     await status_message.edit(
-        "`Processing user info...`"
+        "`يلا عم جيب معلوماتك ...`"
     )
     from_user = None
     from_user_id, _ = extract_user(message)
@@ -84,7 +84,7 @@ async def who_is(client, message):
     dc_id = from_user.dc_id or "[User Doesn't Have A Valid DP]"
    
     message_out_str += f"<b>◀اسم اليوزر تبعك:</b> @{username}\n"
-    message_out_str += f"<b>◀رابط حسابك:</b> <a href='tg://user?id={from_user.id}'><b>Click Here</b></a>\n"
+    message_out_str += f"<b>◀رابط حسابك:</b> <a href='tg://user?id={from_user.id}'><b>إكبس هون</b></a>\n"
     if message.chat.type in ((enums.ChatType.SUPERGROUP, enums.ChatType.CHANNEL)):
         try:
             chat_member_p = await message.chat.get_member(from_user.id)
