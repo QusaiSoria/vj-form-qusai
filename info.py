@@ -82,7 +82,7 @@ PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', False)) 
 # If PREMIUM_AND_REFERAL_MODE is True Then Fill Below Variable, If Flase Then No Need To Fill.
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal count
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1month')
-PAYMENT_QR = environ.get('PAYMENT_QR', 'https://graph.org/file/55749b0d3eaee3a5b958b.jpg')
+PAYMENT_QR = environ.get('PAYMENT_QR', 'https://i.ibb.co/jZ5L9wxv/image.png')
 PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- خطط الإشتراك - \n\n- 15.000 ليرة سوري  - شهر\n- 25.000 ليرة سوري - شهرين\n\n🎁 ميزات الإشتراك 🎁\n\n○ الحصول على الملفات\n○ الوصول لجيع المسلسلات السورية\n○ الوصول للمسلسلات بالجودة الأصلية\n○ الوصول للمسلسلات التي ستتوفر في المستقبل\n○ إمكانية طلب مسلسل إذا لم يكن متوفر بالبوت\n○ التواصل مع الأدمن\n\n✨ رمز سيرياتيل كاش - <code>82801013</code>\n\nتفحص خطتك الحالية /myplan\n\n💢 عليك إرسال لقطة شاشة بعد تمام عملية الدفع\n\n‼️ بعدما ترسل صورة لقطة الشاشة بعد التأكد من صحة الدفع سيتم تأكيد إشتراكك بأقرب وقت</b>')
 OWNER_USERNAME = environ.get('OWNER_USERNAME', 'MosalsalatSoriaKadema101Contact') # owner username without @
 
