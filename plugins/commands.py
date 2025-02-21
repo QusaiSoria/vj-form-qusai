@@ -49,9 +49,9 @@ async def start(client, message):
             buttons = [[
                 #InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                #InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                #InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('✪ قناتنا ✪', url="https://t.me/MosalsalatSoriaKadema101"),
             ],[
+                InlineKeyboardButton('👨‍💻 مطور البوت 👨‍💻', url="https://t.me/DeadOne101")
                 #InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
                 #InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
             ],[
@@ -63,7 +63,7 @@ async def start(client, message):
             buttons = [[
                 #InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('✪ قناتنا', url="https://t.me/MosalsalatSoriaKadema101"),
+                InlineKeyboardButton('✪ قناتنا ✪', url="https://t.me/MosalsalatSoriaKadema101"),
             ],[
                 InlineKeyboardButton('👨‍💻 مطور البوت 👨‍💻', url="https://t.me/DeadOne101")
                 #InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
@@ -1452,8 +1452,8 @@ async def plans_cmd_handler(client, message):
     if PREMIUM_AND_REFERAL_MODE == False:
         return 
     btn = [            
-        [InlineKeyboardButton("ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ʀᴇᴄᴇɪᴘᴛ 🧾", url=f"https://t.me/{OWNER_USERNAME}")],
-        [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
+        [InlineKeyboardButton("أرسل لقطة الشاشة هنا 🧾 ", url=f"https://t.me/{OWNER_USERNAME}")],
+        [InlineKeyboardButton("⚠️ إغلاق / حذف ⚠️", callback_data="close_data")]
     ]
     reply_markup = InlineKeyboardMarkup(btn)
     await message.reply_photo(
