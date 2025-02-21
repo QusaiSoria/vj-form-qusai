@@ -1118,12 +1118,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             
     elif query.data == "buy_premium":
         btn = [[            
-            InlineKeyboardButton("✅sᴇɴᴅ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ ʀᴇᴄᴇɪᴘᴛ ʜᴇʀᴇ✅", url=f"https://t.me/{OWNER_USERNAME}")
+            InlineKeyboardButton("✅أرسل لقطة الشاشة هنا✅", url=f"https://t.me/{OWNER_USERNAME}")
         ]
             for admin in ADMINS
         ]
         btn.append(
-            [InlineKeyboardButton("⚠️ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ⚠️", callback_data="close_data")]
+            [InlineKeyboardButton("⚠️إغلاق / حذف⚠️", callback_data="close_data")]
         )
         reply_markup = InlineKeyboardMarkup(btn)
         await query.message.reply_photo(
