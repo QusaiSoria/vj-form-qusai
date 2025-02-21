@@ -173,11 +173,18 @@ async def auto_approve(client, message: ChatJoinRequest):
                         ],[
                             InlineKeyboardButton("طريقة الإشتراك", url=VERIFY_TUTORIAL)
                         ]]
-                        await client.send_message(
-                            chat_id=message.from_user.id,
-                            text="<b>نعتذر لا يمكنك الحصول على الملفات لأنك لست مشترك في البوت !\nنرجو منك الاشتراك ثم اعادة الطلب لتحصل على الملفات ! \nيمكنك الإشتراك من خلال الضغط على الامر /plan</b>",
-                            protect_content=True,
-                            reply_markup=InlineKeyboardMarkup(btn)
+                        #await client.send_message(
+                           # chat_id=message.from_user.id,
+                         #   text="<b>نعتذر لا يمكنك الحصول على الملفات لأنك لست مشترك في البوت !\nنرجو منك الاشتراك ثم اعادة الطلب لتحصل على الملفات ! \nيمكنك الإشتراك من خلال الضغط على الامر /plan</b>",
+                          #  protect_content=True,
+                           # reply_markup=InlineKeyboardMarkup(btn)
+                        #)
+                        reply_markup = InlineKeyboardMarkup(btn)
+                        m=await message.reply_sticker("CAACAgQAAxkBAALq9WeRSdM9hkXoRxz6bg7-i0gplncGAAJdAAOp1HEBioo4tsUUfq0eBA") 
+                        await message.reply_photo(
+                        photo = "https://i.ibb.co/cNP1vXd/image.png"،
+                        caption= "<b>نعتذر لا يمكنك الحصول على الملفات لأنك لست مشترك في البوت !\nنرجو منك الاشتراك ثم اعادة الطلب لتحصل على الملفات ! \nيمكنك الإشتراك من خلال الضغط على الامر /plan</b>",
+                        reply_markup=reply_markup
                         )
                         return
                 if STREAM_MODE == True:
