@@ -1470,7 +1470,7 @@ async def check_plans_cmd(client, message):
     if await db.has_premium_access(user_id):         
         remaining_time = await db.check_remaining_uasge(user_id)             
         expiry_time = remaining_time + datetime.datetime.now()
-        await message.reply_text(f"**Your plans details are :\n\nRemaining Time : {remaining_time}\n\nExpirytime : {expiry_time}**")
+        await message.reply_text(f"**تفاصيل إشتراكك :\n\nالوقت المتبقي : {remaining_time}\n\nوقت انتهاء الإشتراك : {expiry_time}**")
     else:
         btn = [ 
             [InlineKeyboardButton("إضغط هنا للحصول على تجربة مجانية ل 5 دقائق 😊", callback_data="get_trail")],
@@ -1479,7 +1479,7 @@ async def check_plans_cmd(client, message):
         ]
         reply_markup = InlineKeyboardMarkup(btn)
         m=await message.reply_sticker("CAACAgQAAxkBAALq9WeRSdM9hkXoRxz6bg7-i0gplncGAAJdAAOp1HEBioo4tsUUfq0eBA")         
-        await message.reply_text(f"**ليس لديك إشراك بالبوت 😥\n\n يمكنك الإشتراك من هنا /plan**",reply_markup=reply_markup)
+        await message.reply_text(f"**ليس لديك إشتراك بالبوت 😥\n\n يمكنك الإشتراك من هنا /plan**",reply_markup=reply_markup)
         await asyncio.sleep(2)
         await m.delete()
 
