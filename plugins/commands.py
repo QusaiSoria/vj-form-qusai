@@ -1478,8 +1478,13 @@ async def check_plans_cmd(client, message):
             [InlineKeyboardButton("⚠️ إغلاق / حذف ⚠️", callback_data="close_data")]
         ]
         reply_markup = InlineKeyboardMarkup(btn)
-        m=await message.reply_sticker("CAACAgQAAxkBAALq9WeRSdM9hkXoRxz6bg7-i0gplncGAAJdAAOp1HEBioo4tsUUfq0eBA")         
-        await message.reply_text(f"**ليس لديك إشتراك بالبوت 😥\n\n يمكنك الإشتراك من هنا /plan**",reply_markup=reply_markup)
+        m=await message.reply_sticker("CAACAgQAAxkBAALq9WeRSdM9hkXoRxz6bg7-i0gplncGAAJdAAOp1HEBioo4tsUUfq0eBA") 
+        await mwssage.reply_photo(
+            photo = "https://i.ibb.co/LDTQ7GbC/FB-IMG-1740120016208.jpg",
+            caption= f"**ليس لديك إشتراك بالبوت 😥\n\n يمكنك الإشتراك من هنا /plan**",
+            reply_markup=reply_markup
+        )
+        #await message.reply_text(f"**ليس لديك إشتراك بالبوت 😥\n\n يمكنك الإشتراك من هنا /plan**",reply_markup=reply_markup)
         await asyncio.sleep(2)
         await m.delete()
 
