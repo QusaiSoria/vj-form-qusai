@@ -22,7 +22,7 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
 # This Pics Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
 PICS = (environ.get('PICS', 'https://i.ibb.co/cNP1vXd/image.png https://i.ibb.co/4mfNxM7/IMG-20250122-084536-557.jpg')).split() #SAMPLE PIC
 
-NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/b69af2db776e4e85d21ec.jpg")
+NOR_IMG = environ.get("NOR_IMG", "https://i.ibb.co/1tpGh1ry/IMG-20250222-073351-660.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
@@ -84,7 +84,7 @@ REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal coun
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1month')
 PAYMENT_QR = environ.get('PAYMENT_QR', 'https://i.ibb.co/jZ5L9wxv/image.png')
 PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>- خطط الإشتراك - \n\n- 15.000 ليرة سوري  - شهر (1month) \n- 25.000 ليرة سوري -  شهرين(2month)\n\n🎁 ميزات الإشتراك 🎁\n\n○ الحصول على الملفات\n○ الوصول لجيع المسلسلات السورية\n○ الوصول للمسلسلات بالجودة الأصلية\n○ الوصول للمسلسلات التي ستتوفر في المستقبل\n○ إمكانية طلب مسلسل إذا لم يكن متوفر بالبوت\n○ التواصل مع الأدمن\n\n✨ رمز سيرياتيل كاش - <code>82801013</code>\n\nتفحص خطتك الحالية /myplan\n\n💢 عليك إرسال لقطة شاشة بعد تمام عملية الدفع\n\n‼️ بعدما ترسل صورة لقطة الشاشة بعد التأكد من صحة الدفع سيتم تأكيد إشتراكك بأقرب وقت</b>')
-OWNER_USERNAME = environ.get('OWNER_USERNAME', 'MosalsalatSoriaKadema101ContactBot') # owner username without @
+OWNER_USERNAME = environ.get('OWNER_USERNAME', 'MosalsalatSoriaKademaSupBot') # owner username without @
 
 
 # Clone Information : If Clone Mode Is True Then Bot Clone Other Bots.
