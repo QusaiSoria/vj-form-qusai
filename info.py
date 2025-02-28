@@ -20,7 +20,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
 
 # This Pics Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://i.ibb.co/cNP1vXd/image.png https://i.ibb.co/4mfNxM7/IMG-20250122-084536-557.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://i.ibb.co/cNP1vXd/image.png https://i.ibb.co/LdNY9JRD/IMG-20250228-192242-027.jpg')).split() #SAMPLE PIC
 
 NOR_IMG = environ.get("NOR_IMG", "https://i.ibb.co/1tpGh1ry/IMG-20250222-073351-660.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
