@@ -207,7 +207,7 @@ async def auto_approve(client, message: ChatJoinRequest):
                     chat_id=message.from_user.id,
                     file_id=file_id,
                     caption=f_caption,
-                    protect_content=True if pre == 'filep' else False,
+                    protect_content=False if pre == 'filep' else False,
                     reply_markup=InlineKeyboardMarkup(button)
                 )
                 filesarr.append(msg)
@@ -275,7 +275,7 @@ async def auto_approve(client, message: ChatJoinRequest):
                 msg = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=file_id,
-                    protect_content=True if pre == 'filep' else False,
+                    protect_content=False if pre == 'filep' else False,
                     reply_markup=InlineKeyboardMarkup(button)
                 )
                 filetype = msg.media
@@ -349,7 +349,7 @@ async def auto_approve(client, message: ChatJoinRequest):
             chat_id=message.from_user.id,
             file_id=file_id,
             caption=f_caption,
-            protect_content=True if pre == 'filep' else False,
+            protect_content=False if pre == 'filep' else False,
             reply_markup=InlineKeyboardMarkup(button)
         )
         btn = [[
