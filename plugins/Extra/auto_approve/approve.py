@@ -252,7 +252,7 @@ async def auto_approve(client, message: ChatJoinRequest):
                         await client.send_message(
                             chat_id=message.from_user.id,
                             text="<b>نعتذر لا يمكنك الحصول على الملفات لأنك لست مشترك في البوت !\nنرجو منك الاشتراك ثم اعادة الطلب لتحصل على الملفات ! \nيمكنك الإشتراك من خلال الضغط على الامر /plan</b>",
-                            protect_content=True,
+                            protect_content=False,
                             reply_markup=InlineKeyboardMarkup(btn)
                         )
                         return
