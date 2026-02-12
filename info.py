@@ -83,7 +83,7 @@ PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE',True)) # 
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal count
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1month')
 PAYMENT_QR = environ.get('PAYMENT_QR', 'https://i.ibb.co/KjqLPBgf/IMG-20260212-163615-648.jpg')
-PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>-  الإشتراك - \n\n  الباقة الرمضانية - 20.000 ليرة سوري - لأخر شهر رمضان 🌙\n\n🎁 ميزات الإشتراك 🎁\n\n○ الحصول على الملفات\n○ الوصول لجميع المسلسلات السورية\n○ الوصول للمسلسلات بالجودة الأصلية\n○ إمكانية طلب مسلسل إذا لم يكن متوفر بالبوت\n○ التواصل مع الأدمن\n\n✨ رمز شام كاش - <code>03038e06930158789560c019f534d5c5</code>\n\nتفحص خطتك الحالية /myplan\n\n💢 عليك إرسال لقطة شاشة بعد تمام عملية الدفع\n\n‼️ بعدما ترسل صورة لقطة الشاشة بعد التأكد من صحة الدفع سيتم تأكيد إشتراكك بأقرب وقت</b>')
+PAYMENT_TEXT = environ.get('PAYMENT_TEXT', '<b>-  الإشتراك - \n\n  الباقة الرمضانية - 20.000 ليرة سوري قديمة(200 ليرة جديدة)  - لأخر شهر رمضان 🌙\n\n🎁 ميزات الإشتراك 🎁\n\n○ الحصول على الملفات\n○ الوصول لجميع المسلسلات السورية\n○ الوصول للمسلسلات بالجودة الأصلية\n○ إمكانية طلب مسلسل إذا لم يكن متوفر بالبوت\n○ التواصل مع الأدمن\n\n✨ رمز شام كاش - <code>03038e06930158789560c019f534d5c5</code>\n\nتفحص خطتك الحالية /myplan\n\n💢 عليك إرسال لقطة شاشة بعد تمام عملية الدفع\n\n‼️ بعدما ترسل صورة لقطة الشاشة بعد التأكد من صحة الدفع سيتم تأكيد إشتراكك بأقرب وقت</b>')
 OWNER_USERNAME = environ.get('OWNER_USERNAME', 'DeadOne101ContactBot') # owner username without @
 
 
@@ -131,7 +131,7 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
 
 # Shortlink Info
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False)) # Set True Or False
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True)) # Set True Or False
 SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
 SHORTLINK_API = environ.get('SHORTLINK_API', '')
 TUTORIAL = environ.get('TUTORIAL', '') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
@@ -201,5 +201,6 @@ else:
 # Don't Remove Credit @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
+
 
 
